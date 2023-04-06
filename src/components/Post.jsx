@@ -3,6 +3,7 @@ import { Container, Card, Button } from 'react-bootstrap';
 const Post = () => {
 
     return (
+        <div>
         <Container >
             <Card style={{ width: '18rem', boxSizing: "border-box", paddingTop: "2rem"}} >
                 <Card.Img variant="top" src='/' style={{ width: '18rem' }} />
@@ -20,6 +21,7 @@ const Post = () => {
                 </Card.Body>
             </Card>
         </Container>
+        </div>
     );
 }
 
