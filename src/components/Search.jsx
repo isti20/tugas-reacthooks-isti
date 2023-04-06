@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import NewsItem from './PostNews';
+import Post from './Post';
 
 const Search = () => {
     const [news, setNews] = useState([])
@@ -33,7 +33,7 @@ const Search = () => {
             <div className="results">
                 {news.map(element => (
                     <div key={element.url}>
-                    <NewsItem 
+                    <Post
                     urlToImage={element.urlToImage}
                     title={element.title} 
                     author={element.author}

@@ -1,22 +1,22 @@
 import { Container, Card, Button } from 'react-bootstrap';
 
-const Post = () => {
+const Post = (props) => {
+    let { urlToImage, title, author, description, newsUrl, publishedAt } = props;
 
     return (
         <div>
-        <Container >
-            <Card style={{ width: '18rem', boxSizing: "border-box", paddingTop: "2rem"}} >
-                <Card.Img variant="top" src='/' style={{ width: '18rem' }} />
+        <Container>
+            <Card style={{ width: '18rem'}} >
+                <Card.Img variant="top" src={urlToImage} style={{ width: '18rem' }} />
                 <Card.Body>
-                    <Card.Title style={{ fontSize: '18px' }}>Card Title</Card.Title>
-                    <small>Date</small>
+                    <Card.Title style={{ fontSize: '18px' }}>{title}</Card.Title>
+                    <small>{publishedAt}</small>
                     <Card.Text style={{ fontSize: '15px' }}>
-                        <small>Author</small>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
+                        <small>{author}</small>
+                        {description}
                     </Card.Text>
-                    <Button variant="primary">
-                    <a href='/' >Read More</a>
+                    <Button variant="primary" onClick={newsUrl}>
+                        Read More
                     </Button>
                 </Card.Body>
             </Card>
