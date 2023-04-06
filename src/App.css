@@ -1,7 +1,5 @@
 :root {
-	--mainColor: #29335c;
-	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
+	--headerColor: #5b6eba;
 	--textColor: #eee;
 }
 
@@ -11,6 +9,6 @@
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
-	background-color: var(--mainColor);
+	background-color: var(--headerColor);
 	color: var(--textColor);
 }
