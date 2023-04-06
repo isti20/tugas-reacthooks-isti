@@ -10,9 +10,8 @@ const Post = (props) => {
                 <Card.Img variant="top" src={urlToImage} style={{ width: '18rem' }} />
                 <Card.Body>
                     <Card.Title style={{ fontSize: '18px' }}>{title}</Card.Title>
-                    <small>{publishedAt}</small>
+                    <small>{author}</small> | <small>{publishedAt}</small>
                     <Card.Text style={{ fontSize: '15px' }}>
-                        <small>{author}</small>
                         {description}
                     </Card.Text>
                     <Button variant="primary" onClick={newsUrl}>
