@@ -14,7 +14,7 @@ const Post = (props) => {
                     <Card.Text style={{ fontSize: '15px' }}>
                         {description}
                     </Card.Text>
-                    <Button href={newsUrl}>
+                    <Button href={newsUrl} className='button'>
                         Read More
                     </Button>
                 </Card.Body>

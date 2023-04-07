@@ -38,3 +38,17 @@
 	border-radius: 10px;
     background: #f8f8ff;
 }
+
+.button {
+	background-color: var(--headerColor);
+	border: none;
+	border-radius: 5px;
+	color: var(--textColor);
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 2px 1px;
+	cursor: pointer;
+}
